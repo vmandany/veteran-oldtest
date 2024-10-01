@@ -1,0 +1,20 @@
+/* first we start looking at styling Type selectors with css */
+
+/* note the different commenting tags used with css from html */
+
+/**{
+	font-famiily: Tahoma, terbuchet ms, sans-serif;
+}
+
+h1 {
+	font-family: "Tahoma", serif;
+}
+
+b {
+	color: rebeccapurple;
+	/* note how the b tag takes the universal rule typeface of Arial, etc */
+/*}
+
+p {
+	font-size: 105%;
+}*/

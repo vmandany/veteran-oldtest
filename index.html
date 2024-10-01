@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>California_Veteran_Support</title>
+    <link href="css/index_01.css" type="text/css" rel="stylesheet" />
+    <style>
+      /* MEDIA QUERIES */
+      @media screen and (min-width: 47.5em) {
+        .leftColumn {
+          margin-right: 19.5em;
+        }
+        .leftColumn2 {
+          margin-right: 19.5em;
+        }
+        .leftColumn3 {
+          margin-right: 19.5em;
+        }
+        .leftColumn4 {
+          margin-right: 19.5em;
+        }
+        .leftColumn5 {
+          margin-right: 19.5em;
+        }
+        .rightColumn {
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 18.75em;
+        }
+      }
+      *,
+      *:before,
+      *:after {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        /*background-color: #f2e3ce; earthy 9cbccb blue*/
+        background-image:url(images/sky.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        font-family: gill sans; sans-serif;
+      }
+      h1 {
+        margin: 10px auto 20px 20px;
+        background-image:url(images/mainlogo.jpg);
+        background-size: 40px 40px;
+        background-position: right;
+        background-repeat:no-repeat; 
+      }
+      h4 { margin: 10px auto 20px 20px; }
+      .columnsContainer,
+      footer,
+      header {
+        position: relative;
+        margin: 0.5em;
+      }
+      .leftColumn,.leftColumn2,.leftColumn3,.leftColumn4,.leftColumn5,
+      .rightColumn,
+      footer,
+      header {
+        border: 1px solid #ccc;
+        padding: 1.25em;
+      }
+      .leftColumn {
+        margin-bottom: 0.5em;
+        background-color: #f7a086;/*earthy light-red*/
+      }
+      .leftColumn2 {
+        margin-bottom: 0.5em;
+        background-color: #f7a086;/*earthy light-red*/
+      }
+      .rightColumn {
+        margin-bottom: 0.5em;
+        background-color: #9cbccb; /*earthy f2e3ce white*/
+      }
+      .leftColumn3 {
+        margin-bottom: 0.5em;
+        background-color: #f7a086;/*earthy light-red*/
+      }
+      .leftColumn4 {
+        margin-bottom: 0.5em;
+        background-color: #f7a086;/*earthy light-red*/
+      }
+      .leftColumn5 {
+        margin-bottom: 0.5em;
+        background-color: #f7a086;/*earthy light-red*/
+      }
+      .nav {
+
+        list-style: none;
+        margin-left: 0;
+        margin-bottom: 0;
+        padding-left: 0;
+      }
+      .nav li,
+      a {
+
+        display: inline-block;
+        *display: inline;
+        zoom: 1;
+        color: #000000;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: none;
+        color: #c45824;/*earthy dark-red*/
+      }
+      .inline-items {
+        margin-top: 0;
+      }
+      .inline-items li {
+        margin-left: 0;
+        border-left: 1px solid black;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+      .inline-items li:first-child {
+        margin-left: 0;
+        border: none;
+        padding-left: 0;
+        padding-right: 10px;
+      }
+      .inline-items li:last-child {
+        padding-right: 0;
+      }
+      .background-image { background-image:url(images/blue_col.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;}
+      #container {
+      width: 700px; 
+      margin-left: auto;
+      margin-right: auto;
+      }  
+      #box { 
+      background-color: lightpink; 
+      margin-left: 30px; 
+      margin-right:30px; 
+      margin-top: 0px; 
+      margin-bottom: 0px;
+      padding: 10px;
+      }
+      #box2 { 
+      background-color: limegreen; 
+      margin-left: 30px; 
+      margin-right:30px; 
+      margin-top: 0px; 
+      margin-bottom: 0px;
+      padding: 10px;
+      }
+      #box3 { 
+      background-color: lightyellow; 
+      margin-left: 30px; 
+      margin-right:30px; 
+      margin-top: 0px; 
+      margin-bottom: 0px;
+      padding: 10px;
+      } 
+
+      .parentbox {
+		display:flex;
+		
+		height: 125px;
+		border: 2px dashed;
+		flex-wrap: wrap;
+		align-content: center;
+		max-width: 800px; /* the wrapper will be no larger than this amount */
+		width: 80%; /* wrapper is 80% of container up to a max of 800px */
+		margin:0 auto;
+		background-color: #C4b39b;
+		overflow: hidden;
+		padding:20px;
+		}
+		.parentbox > div {
+		height:85px;
+		margin:5px;
+		/*background-color:#1B77f5;*/
+		}
+		.box-1{
+		flex:1 1 100px;
+		background-color: #f2e3c3;
+		}
+		.box-2{
+		flex:1 1 100px;
+		background-color: #f2e3c3;
+		}
+		.box-3{
+		flex:1 1 300px;
+		background-color: #f2e3c3;
+		}
+    .form-container {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #9cbccb;
+    }
+
+    .form-container input[type="text"],
+    .form-container input[type="email"],
+    .form-container input[type="tel"],
+    .form-container input[type="submit"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border: none;
+      background-color: #bfc8cc;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #5788eb;
+      color: #fff;
+      cursor: pointer;
+    }
+    ol {
+      color: black;
+      list-style-type: disc;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome to California Veterans Support Page</h1>
+    <h4>Made and ran by Veterans, for Veterans! We support you directly!</h4>
+    <header>
+      <nav>
+        <ul class="nav inline-items">
+          <li><a href="#">Home</a></li>
+          <li><a href='pages/About_Page.html'>About</a></li>
+        
+          <li><a href="pages/Image_paths.html">Personal Page</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="columnsContainer">
+      <div class="leftColumn">
+        <ol>
+        <h2><li>What is VA Disability and who is eligible?</li></h2>
+        </ol>
+        <p>
+          VA disability: Have you ever been injured or developed some type of condition while serving in the military? Have you been honorably discharged from the military? If you answered yes to any of these questions, then you are definitely qualified to file a claim to potentially get disability through the VA. <br><br>
+          <a href="pages/Page2.html"> CLICK HERE</a>
+
+        </p>
+        
+        
+      </div> <!-- End of Leftcolumn div -->
+      <div class="leftColumn2">
+        <ol>
+        <h2><li>Evidence (Supporting Documents)</li></h2>
+        </ol>
+        <p>
+          In order to file a claim, you will need to provide supporting documents, or as the VA calls it, evidence. You will need to provide hospital records that show a relation between you and your claimed ilness or condition that took place during your service. Any private medical records while in the service. And finally, any supporting statements from family members, friends, clergy members, law enforcement, and people you have served with.<br><br> <a href="pages/Page3.html"> CLICK HERE</a> 
+        </p>
+        
+        
+      </div><!-- End of Leftcolumn2 div -->
+      <div class="leftColumn3">
+        <ol>
+        <h2><li>Filing and Status Checks</li></h2>
+        </ol>
+        <p>
+          You may file by mail, in person, or with the help of a trained professional! 
+          I personally emailed a few different individuals during my final few months of active duty service and they helped me file online. Currently, the average number of days it takes to complete a disability related claim is roughly 102 days, as of April of 2023. <br><br>
+           <a href="https://www.va.gov/disability/file-disability-claim-form-21-526ez/introduction"> CLICK HERE</a>
+          <br><br>
+        </p>
+        </div><!-- End of Leftcolumn3 div -->
+        <div class="leftColumn4" style=" background-color: orange; padding: 2px;">
+          <span style="color: cadetblue;">ASK/</span>
+          <span style="color: rebeccapurple;">RESEARCH/</span>
+          <span style="color: white;">IMPLEMENT</span>
+          <article>
+          <table>
+            <tr>
+              <th>Actions #</th>
+              <th>Sustainability</th>
+              <th>Priority Position</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>VA Disability</td>
+              <td>First Choice</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>GI Bill Application</td>
+              <td>Second Choice</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Local Community College</td>
+              <td>Third Choice</td>
+            </tr>
+          </table>
+        </article>
+       
+      </div><!-- End of Leftcolumn4 div -->
+      <div class="leftColumn5">
+        <img src="images/mainlogo.jpg" width="150px" height="150px" alt="My logo" style="float: right; margin-left: 5px;"/>
+          <ol>
+            <li>VA Disability</li>
+            <li>Research</li>
+            <li>
+              Implement
+              <ul>
+                <li>Gather documents</li>
+                <li>Acquire supporting statements</li>
+                <li>Complete and submit online form</li>
+                <li>Check status weekly</li>
+              </ul>
+            </li>
+          </ol>
+        </div> <!-- End of Leftcolumn div -->
+      <div class="rightColumn">
+        <h2>Local School Info</h2>
+        <p>
+          This section is dedicated to helping those who need assistance in attenting a local community college, namely, Glendale Community College (GCC). By clicking on the link below, you'll be taken to a page where everything is explained to you regarding applying. 
+          <br><br>Additionaly, since you are a veteran, you will need to talk to Isaac Pedraza (ipedraza@glendale.edu) and Charles Shumate (cshumate@glendale.edu) as they are the ones who will help you set up your veteran status at the school. They will also help you with questions regarding the GI Bill. 
+          <br><br>
+           <a href="https://www.glendale.edu/apply"> CLICK HERE!</a>
+          <br><br>
+        </p>
+      </div><!-- End of Rightcolumn div -->
+    </div><!-- End of columnsContainer div -->
+    <section class="parentbox">
+      <div class="box-1">GI Bill Guide: <a href="https://www.va.gov/education/gi-bill-comparison-tool/"> CLICK HERE to get started! </a></div><!-- End of box-1 div -->
+      <div class="box-2">VA Emergency Notifications: <a href="https://public.govdelivery.com/accounts/USVHA/subscriber/new?topic_id=USVHA_491"> SIGN UP HERE! </a></div><!-- End of box-2 div -->
+      <div class="box-3">Find School Counselors at CSUN here: <a href="https://www.csun.edu/engineering-computer-science/computer-science/undergraduate-advisement-procedures-cs-and-cit"> CLICK HERE to find your advisor at CSUN! Best place to start would be to speak to an advisor. </a></div><!-- End of box-3 div -->
+    </section>
+    <div class="background-image"></div>
+    <div id="container">
+    <h1> Introducing the Container</h1> 
+    <p id="box"> <b>This section is empty</b> </p> 
+    <p id="box2"> <b>Another empty section</b>
+    </p> 
+    <p id="box3"> Final Empty Section
+    </p>
+    </div> <!--end container div --> 
+    <p id="box"> <b>This section is similar to the previous ones</b> </p> 
+    <footer style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+    <div class="form-container">
+    <form name="myform" method="get" action="process.php">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="myname" maxlength="50" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="myemail" required>
+
+      <label for="phone">Phone number:</label>
+      <input type="tel" id="phone" name="myphone" required>
+
+      <input type="submit" value="Send">
+    </form>
+  </div><!-- End of form-container div -->
+    <p>
+        <a href="#">Contact Us</a> | <a href="#">Sitemap</a> |
+        <a href="#">Privacy Policy</a>
+    </p>
+    <p>Vagrik Mandany &copy;2023</p>
+    <img src="images/mainlogo.jpg" width="150px" height="150px" alt="My logo" />
+    <img src="images/Logo_LOOP.gif" width="150px" height="150px" alt="My 2nd logo" />
+</footer>
+</body>
+</html>

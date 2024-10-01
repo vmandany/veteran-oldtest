@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+	<title>Veterans_Guidance_Of_California</title>
+	<meta name ="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		
+           
+		h1 { 
+		font-size: 150%; 
+		background-position: right;
+		background-repeat:no-repeat; 
+		/* background-color:white;
+		background-size: 30px 30px;
+		background-position: center;
+		background-repeat:no-repeat; */
+		
+		}
+		h2 {
+		font-size: 100%;
+		background-position: right;
+		background-repeat:no-repeat; 
+		}
+		div {
+        /*background-color: #98bef1;*/
+        overflow: auto;
+        width: 100%;
+      }
+		p {
+        font-family: Arial, sans-serif;}
+		font-size: 1.2em;
+			padding: 5px;
+      }
+     *{
+                box-sizing: border-box;}
+    .topnav {
+                overflow: hidden;
+                background-color: #333;}
+ 
+    .topnav a{
+                float: left;
+                display: inline-block;
+                color: #e4ecdd;
+                text-align: center;
+                padding: 10px 12px;
+                border: 2px solid #c6cfbe;
+                text-decoration: none;
+            }
+    .topnav a:hover {
+                background-color: #9aa88f;
+                color: black;
+            }
+  
+        .parentbox {
+		display:flex;
+		
+		height: 125px;
+		border: 3px dashed;
+		flex-wrap: wrap;
+		align-content: center;
+		max-width: 800px; /* the wrapper will be no larger than this amount */
+		width: 80%; /* wrapper is 80% of container up to a max of 800px */
+		margin:0 auto;
+		background-color: #3C039B;
+		overflow: hidden;
+		padding:20px;
+		}
+		.parentbox > div {
+		height:50px;
+		margin:5px;
+		/*background-color:#1B77f5;*/
+		}
+		.box-1{
+		flex:1 1 100px;
+		background-color: #68A2F1;
+		}
+		.box-2{
+		flex:1 1 100px;
+		background-color: #b568f1;
+		}
+		.box-3{
+		flex:1 1 400px;
+		background-color: #68f1a9;
+		}
+		img {
+			float: left;
+			margin-right: 60px;
+		}
+		.wrapper {
+			max-width: 800px; /* the wrapper will be no larger than this amount */
+			width: 80%; /* wrapper is 80% of container up to a max of 800px */
+			margin:0 auto;
+			background-color: #c8dd9b;
+			overflow: hidden;
+			padding:20px;
+		}
+		.wrapper1 {
+        width: 75%;
+        max-width: 1600px;
+        min-width: 120px;
+        margin: auto;
+      }
+      .column1 {
+        width: 20%;
+        border: 1px solid black;
+        display: inline-block;
+      }
+      .column1 img {
+        width: 100%;
+        vertical-align: bottom;
+        /*display: block;*/
+      }
+		
+	</style> 
+</head>
+<body>
+	<h1>California Veteran Support (CaliforniaVetSupport.com)</h1> 
+	<div class="topnav">
+            <a href="#">Home</a>
+            <a href="#">Resources</a>
+            <a href='pages/About_Page.html'>About (ACTIVE)</a>
+       
+    </div>
+	<a href="pages/Image_paths.html"> Click here to go to to my second page.</a>
+	<h2>Giving back to Veterans </h2> 
+	<h2>Our goal is to provide the necessary resources to service members exiting the military to become self sustainable.</h2>
+<section class="parentbox">
+<div class="box-1">Quick Resource 1: <a href="https://www.va.gov/education/gi-bill-comparison-tool/"> CLICK HERE to get GI Bill help! </a></div>
+<div class="box-2">Emergency Notifications: <a href="https://public.govdelivery.com/accounts/USVHA/subscriber/new?topic_id=USVHA_491"> CLICK HERE to sign up from the VA! </a></div>
+<div class="box-3">Find School Counselors at CSUN here: <a href="https://www.csun.edu/engineering-computer-science/computer-science/undergraduate-advisement-procedures-cs-and-cit"> CLICK HERE to find your advisor at CSUN! Best place to start would be to speak to an advisor. </a></div>
+</section>
+<section class="wrapper1">
+      <div class="column1">
+        <img src="images/logo_image.png" alt="My logo" />
+      </div>
+      <div class="column1">
+        <img src="images/logo_image.png" alt="My logo" />
+      </div>
+      </section>
+<h2> GI Bill resources and applications located here!</h2>
+<p>There are numerous links meant to guide you in your everyday life! </p> 
+<p> VA Disability sign ups located here! </p> 
+
+<h1> Logo testing for float </h1>
+<section class="wrapper">
+<div> 
+	<img
+         src="images/logo_image.png" width="200px" height="200px"alt="My logo" />
+        <p>
+        This is mostly a test to see how the image places against my typed message. This new style of placing an image with text is really cool. It opens so many different possibilities when thinking of ways to provide information to users. You can use this as a way to direct users to something else, or to use an image as an example when talking about something very specific. <br>
+        This is also another copy paste to truly see how the image reacts to the text shape. This is mostly a test to see how the image places against my typed message. This new style of placing an image with text is really cool. It opens so many different possibilities when thinking of ways to provide information to users. You can use this as a way to direct users to something else, or to use an image as an example when talking about something very specific. 
+      </p>
+    </div>
+</section>
+<h2> Questions or comments? </h2>
+<div>
+		<form name="myform" method="get" action="process.php">
+			<p><label>Name: <input type="text" name="myname" maxlength="15"></label></p>
+			<p><label>Age: <input type="number" name="myage"></label></p>
+			<p><label>Email: <input type="email" name="myemail"></label></p>
+			<p><label>Phone: <input type="tel" name="myphone"></label></p>
+			<p><input type="submit" value="Send"></p>
+		</form>
+	</div>
+<footer>© Vagrik Mandany 2023</footer>
+</body>
+</html>

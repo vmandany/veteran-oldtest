@@ -1,0 +1,119 @@
+/* first we start looking at styling Type selectors with css */
+
+/* note the different commenting tags used with css from html */
+
+/**{
+	font-famiily: Tahoma, terbuchet ms, sans-serif;
+}
+
+h1 {
+	font-family: "Tahoma", serif;
+}
+
+b {
+	color: rebeccapurple;
+	/* note how the b tag takes the universal rule typeface of Arial, etc */
+/*}
+
+p {
+	font-size: 105%;
+}*/
+body {
+        font-family: verdana, arial, sans-serif;
+        background-color: #98bef1;
+        
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+        /*background-attachment: scroll;*/
+        /*background-color: #c7ceb9;*/
+        }
+        .textBox {
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            align-items: left;
+            justify-content: left;
+            background-image: url("../images/VMM-161.jpg");
+            background-size: cover;
+        }
+        .textBox::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            background-color: rgba(0,0,0,0.40);
+        }
+		.nav ul {
+            list-style-type: none;
+        }
+        .nav li {
+            display: block;
+        }
+        a:link{
+            color: #0f0032;
+            padding-right: 35px;
+            text-decoration: none;
+            padding: 3px 9px 3px 9px;
+        }
+        a:hover {
+            text-decoration: none;
+            color: #c60d01;
+            background-color: #f9a49e;
+            border: solid black 1px;
+        }
+        #wrapper {
+        background-color: #4a8be3;
+        color: #0a3200;
+        width: 70%;
+        margin: auto;
+        min-width: 1500px;
+      }
+      .leftcolumn {
+        float: left;
+        width: 120px;
+      }
+      .rightcolumn {
+        margin-left: 170px;
+        background-color: #2b5fa6;
+        color: #000000;
+      }
+      .header {
+        background-color: #aecffc;
+        color: #0a3200;
+        font-size: 110%;
+        padding: 10px;
+      }
+      h2 {
+        color: #47c2ff;
+        font-family: arial, sans-serif;
+      }
+      .content {
+        padding: 40px 40px 0 40px;
+      }
+      .floatright {
+        margin: 20px;
+        float: right;
+      }
+      .footer {
+        font-size: 55%;
+        text-align: center;
+        clear: right;
+        padding-bottom: 30px;
+      }
+      .leftcolumn a {
+        margin: 30px;
+        color: #050d5c;
+      }
+        h3 {
+            position: relative;
+            color: white;
+            font-size: 2rem;
+            line-height: 0.9;
+            text-align: center;
+
+        }
